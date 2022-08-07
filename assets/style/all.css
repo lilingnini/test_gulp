@@ -71,6 +71,9 @@ header {
 
 h2 {
   font-size: 36px; }
+  @media (max-width: 648px) {
+    h2 {
+      font-size: 16px; } }
 
 h3 {
   font-size: 48px;
@@ -78,6 +81,13 @@ h3 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 32px; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 36px; } }
+  @media (max-width: 648px) {
+    h3 {
+      font-size: 24px;
+      margin-bottom: 24px; } }
 
 h4 {
   font-size: 48px;
@@ -89,18 +99,11 @@ h4 {
 h5 {
   margin-bottom: 72px; }
 
-@media (max-width: 768px) {
-  h3 {
-    font-size: 36px; } }
-
-@media (max-width: 603px) {
-  h2 {
-    font-size: 16px; }
-  h3 {
-    font-size: 24px;
-    margin-bottom: 24px; }
-  h6 {
-    font-size: 16px; } }
+h6 {
+  font-size: 48px; }
+  @media (max-width: 648px) {
+    h6 {
+      font-size: 16px; } }
 
 .bl-8 {
   border-left: 8px solid #9F1213; }
@@ -152,6 +155,9 @@ h5 {
 .fz-36 {
   font-size: 36px; }
 
+.fz-48 {
+  font-size: 48px; }
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -173,10 +179,39 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 648px) {
+    .header-box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-right: 0;
+      padding-left: 0; } }
+
+@media (max-width: 648px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px; } }
+
+@media (max-width: 648px) {
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; } }
+
+@media (max-width: 648px) {
+  .menu li {
+    width: 50%;
+    text-align: center; } }
 
 .menu a {
   font-size: 20px;
   padding: 25px; }
+  @media (max-width: 648px) {
+    .menu a {
+      border: 1px solid #FFFFFF;
+      padding-top: 12px;
+      padding-bottom: 12px; } }
 
 .banner {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png");
@@ -324,6 +359,10 @@ h5 {
         -ms-flex-align: center;
             align-items: center; } }
 
+@media (max-width: 992px) {
+  .cobrand-card {
+    width: 92%; } }
+
 @media (max-width: 648px) {
   .cobrand-card {
     width: 100%;
@@ -345,6 +384,13 @@ h5 {
 
 .recommend-card {
   width: 23%; }
+  @media (max-width: 992px) {
+    .recommend-card {
+      width: 48%;
+      margin-bottom: 16px; } }
+  @media (max-width: 648px) {
+    .recommend-card {
+      width: 100%; } }
 
 .recommend-text {
   padding: 16px;
@@ -363,6 +409,9 @@ h5 {
 .contact-subtitle {
   font-size: 20px;
   margin-bottom: 24px; }
+  @media (max-width: 648px) {
+    .contact-subtitle {
+      font-size: 16px; } }
 
 .contact-form {
   line-height: 24px;
@@ -388,6 +437,9 @@ input.feedback {
 
 input.agree-content {
   width: 4%; }
+  @media (max-width: 648px) {
+    input.agree-content {
+      width: 10%; } }
 
 .send-box {
   text-align: center; }
@@ -398,6 +450,12 @@ input.agree-content {
   padding: 16px 0;
   background-color: #AA0601;
   color: #FFFFFF; }
+  @media (max-width: 992px) {
+    .send-box button {
+      width: 46%; } }
+  @media (max-width: 648px) {
+    .send-box button {
+      width: 100%; } }
 
 .send-box button:hover {
   color: #AA0601;
@@ -406,6 +464,9 @@ input.agree-content {
 .footer {
   background-color: #AA0601;
   padding-top: 48px; }
+  @media (max-width: 648px) {
+    .footer {
+      padding-top: 24px; } }
 
 .footer-navbar {
   -webkit-box-pack: justify;
@@ -425,6 +486,9 @@ input.agree-content {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 0px; }
+  @media (max-width: 992px) {
+    .footer-navbar-menu {
+      width: 65%; } }
 
 .footer-navbar-menu a {
   gap: 24px; }
@@ -438,26 +502,35 @@ input.agree-content {
       -ms-flex-align: center;
           align-items: center;
   gap: 32px; }
+  @media (max-width: 992px) {
+    .footer-navbar-media {
+      width: 26%; } }
 
-.footer-contact {
+.footer-contact, .footer-contact span {
   font-size: 36px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-
-.footer-contact span {
-  font-size: 36px; }
+  @media (max-width: 648px) {
+    .footer-contact, .footer-contact span {
+      font-size: 18px; } }
 
 .footer-contact-box {
   padding-bottom: 32px;
   border-bottom: 1px solid #FFFFFF; }
+  @media (max-width: 648px) {
+    .footer-contact-box {
+      padding-bottom: 24px; } }
 
 .footer-contact-phone, .footer-contact-letter {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 20px; }
+  @media (max-width: 648px) {
+    .footer-contact-phone, .footer-contact-letter {
+      gap: 4px; } }
 
 .footer-copyright {
   padding-top: 8px;
@@ -467,104 +540,73 @@ input.agree-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 648px) {
+    .footer-copyright {
+      padding-top: 24px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      gap: 8px; } }
 
 .footer-copyright-box {
   gap: 48px; }
+  @media (max-width: 648px) {
+    .footer-copyright-box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      gap: 8px; } }
 
 .footer-copyright-box a {
   padding: 24px 0; }
+  @media (max-width: 648px) {
+    .footer-copyright-box a {
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 .footer-navbar-media-s {
   display: none; }
-
-@media (max-width: 992px) {
-  .cobrand-card {
-    width: 92%; }
-  .recommend-card {
-    width: 48%;
-    margin-bottom: 16px; }
-  .send-box button {
-    width: 46%; }
-  .footer-navbar-menu {
-    width: 65%; }
-  .footer-navbar-media {
-    width: 26%; } }
+  @media (max-width: 648px) {
+    .footer-navbar-media-s {
+      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 22%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      gap: 8px; } }
 
 @media (max-width: 648px) {
-  .header-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-right: 0;
-    padding-left: 0; }
-  .logo {
-    padding-top: 16px;
-    padding-bottom: 16px; }
-  .menu {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%; }
-  .menu li {
-    width: 50%;
-    text-align: center; }
-  .menu a {
-    border: 1px solid #FFFFFF;
-    padding-top: 12px;
-    padding-bottom: 12px; }
   .pro, .classic, .cobrand, .recommend, .contact {
     padding-top: 40px;
-    padding-bottom: 40px; }
-  .recommend-card {
-    width: 100%;
-    margin-bottom: 16px; }
-  .contact-subtitle {
-    font-size: 16px; }
-  input.agree-content {
-    width: 10%; }
-  .send-box button {
-    width: 100%; }
+    padding-bottom: 40px; } }
+
+@media (max-width: 648px) {
   footer .footer-navbar {
-    display: none; }
-  .footer, .footer-copyright {
-    padding-top: 24px; }
-  .footer-contact-box {
-    padding-bottom: 24px; }
-  .footer-contact, .footer-contact span {
-    font-size: 16px; }
-  .footer-copyright, .footer-copyright-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 8px; }
-  .footer-copyright-box a {
-    padding-top: 0;
-    padding-bottom: 0; }
+    display: none; } }
+
+@media (max-width: 648px) {
   .footer-copyright-box i {
-    margin-right: 8px; }
-  .footer-navbar-media-s {
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 22%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 8px; }
+    margin-right: 8px; } }
+
+@media (max-width: 648px) {
   .footer-contact-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .footer-contact-phone, .footer-contact-letter {
-    gap: 4px; } }
+            justify-content: space-between; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -639,6 +681,9 @@ header {
 
 h2 {
   font-size: 36px; }
+  @media (max-width: 648px) {
+    h2 {
+      font-size: 16px; } }
 
 h3 {
   font-size: 48px;
@@ -646,6 +691,13 @@ h3 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 32px; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 36px; } }
+  @media (max-width: 648px) {
+    h3 {
+      font-size: 24px;
+      margin-bottom: 24px; } }
 
 h4 {
   font-size: 48px;
@@ -657,18 +709,11 @@ h4 {
 h5 {
   margin-bottom: 72px; }
 
-@media (max-width: 768px) {
-  h3 {
-    font-size: 36px; } }
-
-@media (max-width: 603px) {
-  h2 {
-    font-size: 16px; }
-  h3 {
-    font-size: 24px;
-    margin-bottom: 24px; }
-  h6 {
-    font-size: 16px; } }
+h6 {
+  font-size: 48px; }
+  @media (max-width: 648px) {
+    h6 {
+      font-size: 16px; } }
 
 .bl-8 {
   border-left: 8px solid #9F1213; }
@@ -720,23 +765,42 @@ h5 {
 .fz-36 {
   font-size: 36px; }
 
-h6 {
+.fz-48 {
   font-size: 48px; }
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 768px;
+      padding-left: 36px;
+      padding-right: 36px; } }
+  @media (max-width: 648px) {
+    .container {
+      max-width: 583px;
+      padding-left: 13px;
+      padding-right: 13px; } }
 
 .faq {
   padding-top: 96px;
   padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .faq {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media (max-width: 648px) {
+    .faq {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 768px;
-    padding-left: 36px;
-    padding-right: 36px; } }
-
-@media (max-width: 603px) {
-  .container {
-    max-width: 583px; }
-  h6 {
-    font-size: 24px; } }
+.faq .title {
+  font-size: 48px;
+  margin-bottom: 32px; }
+  @media (max-width: 648px) {
+    .faq .title {
+      font-size: 24px;
+      margin-bottom: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
