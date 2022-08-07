@@ -1,6 +1,10 @@
+@import "./variables";
 @import "./reset";
+
+@import "./grid";
 @import "./base";
+@import "./utility";
+
 @import "./index.scss";
 @import "./faq";
-@import "./variables";
-@import "./utility";
+

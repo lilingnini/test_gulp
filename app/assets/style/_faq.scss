@@ -4,7 +4,6 @@
 
 
 h6{
-    border-left: 8px solid #9F1213;
     font-size: 48px;
 }
 
@@ -25,10 +24,9 @@ h6{
 
 @media (max-width:603px) {
   .container{
-    max-width: 603px;
+    max-width: 583px;
   }
   h6{
     font-size: 24px;
   }
-
 }

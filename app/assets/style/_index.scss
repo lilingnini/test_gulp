@@ -1,41 +1,20 @@
 @import "./variables";
-
-.text-white{
-  color: $white;
-}
-.d-flex{
-  display: flex;
-}
+@import "./grid";
 
 .container{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 12px;
-  }
+    @include desktop-below(){
+      max-width: 720px;
+    }
+    @include pad(){
+      max-width: 666px;
+    }
+    @include pad-below(){
+      max-width:648px
 
-  h2{
-    font-size: 36px;
-  }
-  h3{
-    font-size: 48px;
-    color:$darkred;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 32px;
-  }
-  h4{
-    font-size: 48px;
-    font-style: italic;
-    color:$lightred;
-    font-weight: bold;
-    text-align: center;
-  }
-  h5{
-    margin-bottom: 72px;
-  }
-  
-  header{
-      background-color: $lightred;
+    }
   }
   .header-box{
     justify-content: space-between;
@@ -57,6 +36,15 @@
     text-align: right;
     padding-top: 296px;
     padding-bottom: 296px;
+    @include desktop-below(){
+        background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png");
+    }
+    @include pad-below(){
+      background-size: cover;
+      padding-top: 144px;
+      padding-bottom: 144px;
+    }
+
   }
   .banner-box{
     display: block;
@@ -67,6 +55,10 @@
   .banner-subtitle{
     font-size: 64px;
     font-weight: bold;
+    @include pad-below(){
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
   }
   .banner a{
     display: inline-block;
@@ -87,6 +79,9 @@
     }
   .pro-box{
     justify-content: space-between;
+    @include desktop-below(){
+      flex-wrap: wrap;
+    }
   }
   
   .pro-box img{
@@ -96,6 +91,13 @@
   .pro-card{
     width: 23%;
     text-align: center;
+  @include desktop-below(){
+    width: 48%;
+  }
+  @include pad-below(){
+    width: 100%;
+    margin-bottom: 24px;
+  }
   }
   .pro-title{
     font-size: 24px;
@@ -118,9 +120,22 @@
   .classic-box{
     justify-content: space-between;
     align-items: center;
+    @include desktop-below(){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .classic-card{
     width: 32%;
+    @include desktop-below(){
+      width: 47%;
+      margin-bottom: 24px;
+    }
+    @include pad-below(){
+      width: 100%;
+      margin-bottom: 24px;
+    }
   }
   
   
@@ -134,6 +149,19 @@
   .cobrand-box a{
     background-color:$white;
   }
+  .cobrand-box {
+    @include desktop-below(){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .cobrand-card{
+    @include pad-below(){
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
   
   .recommend{
     padding-top: 80px;
@@ -141,6 +169,10 @@
   }
   .recommend-box{
     justify-content: space-between;
+    @include desktop-below(){
+      flex-wrap: wrap;
+      margin-bottom: -16px;
+    }
   }
   .recommend-card{
     width: 23%;
@@ -261,38 +293,13 @@
   }
   
   @media(max-width:992px){
-    .container{
-      max-width: 720px;
-    }
-    .banner{
-      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png");
-    }
-  
-    .pro-box{
-      flex-wrap: wrap;
-    }
-    .pro-card{
-      width: 48%;
-    }
-    .classic-box,.cobrand-box{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .classic-card{
-    width: 47%;
-    margin-bottom: 24px;
-    }
+
     .cobrand-card{
     width: 92%;
     }
-    .recommend-box{
-      flex-wrap: wrap;
-      margin-bottom: -24px;
-    }
     .recommend-card{
       width: 48%;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
   
     .send-box button{
@@ -305,22 +312,10 @@
       width: 26%;
     }
   }
-  @media(max-width:768px){
-    .container{
-      max-width: 666px;
-    }
-    .banner-subtitle{
-      font-size: 24px;
-    }
-    h3{
-      font-size: 36px;
-    }
-  }
+
   
-  @media(max-width:603px){
-    .container{
-      max-width: 603px;
-    }
+  @media(max-width:648px){
+
     .header-box{
       flex-direction: column; 
       padding-right: 0;
@@ -343,33 +338,12 @@
       padding-top: 12px;
       padding-bottom: 12px;
     }
-    .banner{
-      background-size: cover;
-      padding-top: 144px;
-      padding-bottom: 144px;
-    }
-    h2{
-      font-size: 16px;
-    }
-    .banner-subtitle{
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
+
     .pro,.classic,.cobrand,.recommend,.contact{
       padding-top: 40px;
       padding-bottom: 40px;
       }
-    h3{
-      font-size: 24px;
-      margin-bottom: 24px;
-    }
-    .pro-box,.recommend-box{
-      flex-wrap: wrap;
-    }
-    .pro-card,.classic-card,.cobrand-card{
-      width: 100%;
-      margin-bottom: 24px;
-    }
+
     .recommend-card{
       width: 100%;
       margin-bottom: 16px;
@@ -383,7 +357,7 @@
     .send-box button{
       width: 100%;
     }
-    .footer-navbar{
+    footer .footer-navbar{
       display:none;
     }
     .footer,.footer-copyright{
