@@ -57,14 +57,14 @@ table {
     .container {
       max-width: 648px;
       padding: 0 24px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .container {
       max-width: 496px;
       padding: 0 18px; } }
   @media (max-width: 375px) {
     .container {
       max-width: 375px;
-      padding: 0 5px; } }
+      padding: 0 13px; } }
 
 .header-box {
   -webkit-box-pack: justify;
@@ -73,7 +73,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .header-box {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -81,7 +81,7 @@ table {
               flex-direction: column;
       padding: 0; } }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px; } }
@@ -91,13 +91,9 @@ table {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .menu li {
-    width: 25%;
-    text-align: center; } }
-
-@media (max-width: 375px) {
-  .menu li {
+    text-align: center;
     width: 50%; } }
 
 .menu a {
@@ -120,7 +116,7 @@ table {
   @media (max-width: 768px) {
     .footer {
       padding-top: 36px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer {
       padding-top: 24px; } }
 
@@ -177,14 +173,14 @@ table {
   @media (max-width: 768px) {
     .footer-contact, .footer-contact span {
       font-size: 24px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer-contact, .footer-contact span {
       font-size: 18px; } }
 
 .footer-contact-box {
   padding-bottom: 32px;
   border-bottom: 1px solid #FFFFFF; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer-contact-box {
       padding-bottom: 24px; } }
 
@@ -193,7 +189,7 @@ table {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer-contact-phone, .footer-contact-letter {
       gap: 4px; } }
 
@@ -205,7 +201,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer-copyright {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -218,7 +214,7 @@ table {
 
 .footer-copyright-box {
   gap: 48px; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer-copyright-box {
       gap: 24px; } }
   @media (max-width: 375px) {
@@ -237,14 +233,14 @@ table {
   @media (max-width: 768px) {
     .footer-copyright-box a {
       padding: 12px 5px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer-copyright-box a {
       padding-top: 0;
       padding-bottom: 0; } }
 
 .footer-navbar-media-s {
   display: none; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .footer-navbar-media-s {
       display: block;
       display: -webkit-box;
@@ -256,11 +252,11 @@ table {
               justify-content: space-between;
       gap: 8px; } }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   footer .footer-navbar {
     display: none; } }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .footer-contact-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -281,19 +277,18 @@ table {
     .container {
       max-width: 648px;
       padding: 0 24px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .container {
       max-width: 496px;
       padding: 0 18px; } }
   @media (max-width: 375px) {
     .container {
       max-width: 375px;
-      padding: 0 5px; } }
+      padding: 0 13px; } }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* outline: 1px solid black; */ }
+          box-sizing: border-box; }
 
 body {
   font-family: 'Roboto', 'Noto Sans TC', sans-serif;
@@ -314,7 +309,7 @@ img {
 header {
   background-color: #AA0601; }
   @media (max-width: 768px) {
-    header {
+    header .container {
       padding-right: 0;
       padding-left: 0; } }
 
@@ -336,7 +331,7 @@ h3 {
   @media (max-width: 768px) {
     h3 {
       font-size: 36px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     h3 {
       font-size: 24px;
       margin-bottom: 24px; } }
@@ -425,7 +420,7 @@ h6 {
   @media (max-width: 992px) {
     .banner {
       background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png"); } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .banner {
       background-size: cover;
       padding-top: 144px;
@@ -447,7 +442,7 @@ h6 {
   @media (max-width: 768px) {
     .banner-subtitle {
       font-size: 48px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .banner-subtitle {
       font-size: 24px;
       margin-bottom: 8px; } }
@@ -486,7 +481,7 @@ h6 {
   @media (max-width: 992px) {
     .pro-card {
       width: 48%; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .pro-card {
       width: 100%;
       margin-bottom: 24px; } }
@@ -535,7 +530,7 @@ h6 {
     .classic-card {
       width: 47%;
       margin-bottom: 24px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .classic-card {
       width: 100%;
       margin-bottom: 24px; } }
@@ -566,7 +561,7 @@ h6 {
   .cobrand-card {
     width: 92%; } }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .cobrand-card {
     width: 100%;
     margin-bottom: 24px; } }
@@ -591,7 +586,7 @@ h6 {
     .recommend-card {
       width: 48%;
       margin-bottom: 16px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .recommend-card {
       width: 100%; } }
 
@@ -612,7 +607,7 @@ h6 {
 .contact-subtitle {
   font-size: 20px;
   margin-bottom: 24px; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .contact-subtitle {
       font-size: 16px; } }
 
@@ -640,7 +635,7 @@ input.feedback {
 
 input.agree-content {
   width: 4%; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     input.agree-content {
       width: 10%; } }
 
@@ -656,7 +651,7 @@ input.agree-content {
   @media (max-width: 992px) {
     .send-box button {
       width: 46%; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .send-box button {
       width: 100%; } }
 
@@ -664,7 +659,7 @@ input.agree-content {
   color: #AA0601;
   background-color: #FFFFFF; }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .pro, .classic, .cobrand, .recommend, .contact {
     padding-top: 40px;
     padding-bottom: 40px; } }
@@ -676,7 +671,7 @@ input.agree-content {
     .faq {
       padding-top: 80px;
       padding-bottom: 80px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .faq {
       padding-top: 40px;
       padding-bottom: 40px; } }
@@ -684,7 +679,7 @@ input.agree-content {
 .faq .title {
   font-size: 48px;
   margin-bottom: 32px; }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .faq .title {
       font-size: 24px;
       margin-bottom: 24px; } }
