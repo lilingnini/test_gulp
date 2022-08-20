@@ -1,0 +1,170 @@
+
+.header-box{
+    justify-content: space-between;
+    align-items: center;
+    @include desktop-below(){
+      align-items: center;
+    }
+    @include pad-below(){
+      flex-direction: column;   
+      align-items: stretch;
+    }
+  }
+  .logo{
+    @include pad-below(){
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+  .menu{
+    @include pad(){
+      flex-wrap: wrap;
+    }
+  }
+  .menu li{
+    @include pad-below(){
+      text-align: center;
+      width: 50%;
+    }
+    @include phone(){
+
+    }
+  }
+  .menu a{
+        font-size: 20px;
+        padding: 25px;
+        @include pad-below(){
+          font-size: 18px;
+          border: 1px solid $white;
+        } 
+        @include phone(){
+          
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+      }
+  
+    
+
+  .footer{
+    background-color:$lightred;
+    padding-top: 48px;
+    @include pad(){
+      padding-top: 36px;
+    }
+    @include pad-below(){
+      padding-top: 24px;
+    }
+  }
+  .footer-navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .footer-navbar-menu{
+    width:40%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    @include desktop-below(){
+      width: 65%;
+    }
+    @include pad(){
+      margin-bottom: 8px;
+    }
+  }
+  .footer-navbar-menu a{
+    gap: 24px;
+  }
+  .footer-navbar-media{
+    width: 15.75%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    @include desktop-below(){
+      width: 26%;
+    }
+    @include pad(){
+      width: 30%;
+    }
+  }
+  .footer-contact, .footer-contact span{
+    font-size: 36px;
+    flex-direction: column;
+    @include pad(){
+      font-size: 24px;
+    }
+    @include pad-below(){
+      font-size: 18px;
+    }
+    }
+  
+  .footer-contact-box{
+    padding-bottom: 32px;
+    border-bottom: 1px solid $white;
+    @include pad-below(){
+      padding-bottom: 24px;
+    }
+  }
+  .footer-contact-phone,.footer-contact-letter{
+    align-items: center;
+    gap:20px;
+    @include pad-below(){
+      gap:4px;
+    }
+  }
+  .footer-copyright{
+    padding-top: 32px;
+    justify-content: space-between;
+    align-items: center;
+    @include pad-below(){
+      flex-direction: column;
+      align-items: flex-start;
+      gap:8px;
+    }
+  }
+  .footer-copyright-box {
+    gap: 48px;
+    @include pad-below(){
+      gap:24px;
+    }
+    @include phone(){
+      flex-direction: column;
+      align-items: flex-start;
+      gap:8px;
+    }
+  
+  }
+  .footer-copyright-box a{
+    padding: 24px 0;
+    @include pad(){
+    padding: 12px 5px;
+    }
+    @include pad-below(){
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .footer-navbar-media-s{
+    display: none;
+    @include pad-below(){
+      display: block;
+      display: flex;
+      width: 25%;
+      justify-content: space-between;
+      gap:8px;
+    }
+  }
+  footer .footer-navbar{
+    @include pad-below{
+      display:none;
+    }
+  }
+
+
+  .footer-contact-content{
+    @include pad-below(){
+      display: flex;
+      justify-content: space-between;
+    }
+  }

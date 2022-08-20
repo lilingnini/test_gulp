@@ -1,0 +1,21 @@
+.faq{
+  padding-top: 96px;  
+  padding-bottom: 80px;
+  @include desktop-below(){
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include pad-below(){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+  .faq .title{
+    font-size: 48px;
+    margin-bottom: 32px;
+    @include pad-below(){
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+

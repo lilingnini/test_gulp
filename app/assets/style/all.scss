@@ -1,10 +1,13 @@
-@import "./variables";
-@import "./reset";
+@import "../style/utils/variables";
+@import "../style/base/reset";
+@import "../style/utils/mixin";
 
-@import "./grid";
-@import "./base";
-@import "./utility";
+@import "../style/base/base";
+@import "../style/utils/helpers";
 
-@import "./index.scss";
-@import "./faq";
+@import "../style/layout/layout";
+@import "../style/page/index";
+
+
+@import "../style/page/faq";
 

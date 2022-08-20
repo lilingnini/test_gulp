@@ -1,32 +1,3 @@
-@import "./variables";
-@import "./grid";
-
-.container{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 12px;
-    @include desktop-below(){
-      max-width: 720px;
-    }
-    @include pad(){
-      max-width: 666px;
-    }
-    @include pad-below(){
-      max-width:648px
-
-    }
-  }
-  .header-box{
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .menu a{
-        font-size: 20px;
-        padding: 25px;
-      }
-  
-  
   .banner{
     background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png");
     background-position: center center;
@@ -34,27 +5,27 @@
     background-repeat: no-repeat; 
     color:$darkred;
     text-align: right;
-    padding-top: 296px;
-    padding-bottom: 296px;
+    height: 787px;
     @include desktop-below(){
         background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png");
     }
     @include pad-below(){
       background-size: cover;
-      padding-top: 144px;
-      padding-bottom: 144px;
+      height: 396px;
     }
-
   }
   .banner-box{
-    display: block;
+    height: 100%;
     flex-direction: column;
     align-items: flex-end;  
+    justify-content: center;
   }
-  
   .banner-subtitle{
     font-size: 64px;
     font-weight: bold;
+    @include pad(){
+      font-size: 48px;
+    }
     @include pad-below(){
       font-size: 24px;
       margin-bottom: 8px;
@@ -83,7 +54,6 @@
       flex-wrap: wrap;
     }
   }
-  
   .pro-box img{
     width: 83px;
     height: auto;
@@ -145,7 +115,6 @@
     background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png");
     background-size: cover;
   }
-  
   .cobrand-box a{
     background-color:$white;
   }
@@ -157,9 +126,12 @@
     }
   }
   .cobrand-card{
+    @include desktop-below(){
+      width: 92%;
+      margin-bottom: 24px;
+    }
     @include pad-below(){
       width: 100%;
-      margin-bottom: 24px;
     }
   }
   
@@ -176,6 +148,13 @@
   }
   .recommend-card{
     width: 23%;
+    @include desktop-below(){
+      width: 48%;
+      margin-bottom: 16px;
+    }
+    @include pad-below(){
+      width: 100%;
+    }
   }
   .recommend-text{
     padding: 16px;
@@ -186,30 +165,35 @@
     color: #707070;
   }
   
+
   .contact{
     background-color: #FBF2F2;
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  
+  .contact-box{
+    max-width: 636px;
+  }
   .contact-subtitle{
     font-size: 20px;
     margin-bottom: 24px;
+    @include pad-below(){
+      font-size: 16px;
+    }
   }
   .contact-form{
     line-height: 24px;
     margin-bottom: 16px;
   }
-  .contact-form p{
-    margin-bottom: 8px;
+  .contact-form li{
+    margin-bottom: 16px;
   }
   .contact-form input{
     width: 100%;
     background-color: #FBF2F2;
-    margin-bottom: 8px;
     padding: 6px 0 6px 12px;
   }
-  input.feedback{
+  .feedback input{
     padding: 6px 0 106px 12px;
   }
   .agree-box{
@@ -218,6 +202,9 @@
   }
   input.agree-content{
     width: 4%;
+    @include pad-below(){
+      width: 10%;
+    }
   }
   .send-box{
     text-align: center;
@@ -228,173 +215,20 @@
     padding: 16px 0;
     background-color: $lightred;
     color: $white;
+    @include desktop-below(){
+      width: 46%;
+    }
+    @include pad-below(){
+      width: 100%;
+    }
   }
   .send-box button:hover{
     color: $lightred;
     background-color: $white;
   }
-  
-  .footer{
-    background-color:$lightred;
-    padding-top: 48px;
-  }
-  .footer-navbar{
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-  }
-  .footer-navbar-menu{
-    width:40%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0px;
-  }
-  .footer-navbar-menu a{
-    gap: 24px;
-  }
-  
-  .footer-navbar-media{
-    width: 15.75%;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-  }
-  
-  .footer-contact{
-    font-size: 36px;
-    flex-direction: column;
-    }
-  .footer-contact span{
-    font-size: 36px;
-  }
-  
-  .footer-contact-box{
-    padding-bottom: 32px;
-    border-bottom: 1px solid $white;
-  }
-  .footer-contact-phone,.footer-contact-letter{
-    align-items: center;
-    gap:20px;
-  }
-  .footer-copyright{
-    padding-top: 8px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footer-copyright-box {
-    gap: 48px;
-  
-  }
-  .footer-copyright-box a{
-    padding: 24px 0;
-  }
-  .footer-navbar-media-s{
-    display: none;
-  }
-  
-  @media(max-width:992px){
-
-    .cobrand-card{
-    width: 92%;
-    }
-    .recommend-card{
-      width: 48%;
-      margin-bottom: 16px;
-    }
-  
-    .send-box button{
-      width: 46%;
-    }
-    .footer-navbar-menu{
-      width: 65%;
-    }
-    .footer-navbar-media{
-      width: 26%;
-    }
-  }
-
-  
-  @media(max-width:648px){
-
-    .header-box{
-      flex-direction: column; 
-      padding-right: 0;
-      padding-left: 0;
-    }
-    .logo{
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
-    .menu{
-      flex-wrap: wrap;
-      width: 100%;
-    }
-    .menu li{
-      width: 50%;
-      text-align: center;
-    }
-    .menu a{
-      border: 1px solid $white;
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-
-    .pro,.classic,.cobrand,.recommend,.contact{
-      padding-top: 40px;
-      padding-bottom: 40px;
+  .pro,.classic,.cobrand,.recommend,.contact{
+      @include pad-below(){
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
-
-    .recommend-card{
-      width: 100%;
-      margin-bottom: 16px;
-    }
-    .contact-subtitle{
-      font-size: 16px;
-    }
-    input.agree-content{
-      width: 10%;
-    }
-    .send-box button{
-      width: 100%;
-    }
-    footer .footer-navbar{
-      display:none;
-    }
-    .footer,.footer-copyright{
-      padding-top: 24px;
-    }
-    .footer-contact-box {
-      padding-bottom: 24px;
-    }
-    .footer-contact,.footer-contact span{
-      font-size: 16px;
       }
-    .footer-copyright,.footer-copyright-box{
-      flex-direction: column;
-      align-items: flex-start;
-      gap:8px;
-    }
-    .footer-copyright-box a{
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-    .footer-copyright-box i{
-      margin-right: 8px;
-    }
-    .footer-navbar-media-s{
-      display: block;
-      display: flex;
-      width: 22%;
-      justify-content: space-between;
-      gap:8px;
-    }
-    .footer-contact-content{
-      display: flex;
-      justify-content: space-between;
-    }
-    .footer-contact-phone,.footer-contact-letter{
-      gap:4px;
-    }
-  
-  }
-  
